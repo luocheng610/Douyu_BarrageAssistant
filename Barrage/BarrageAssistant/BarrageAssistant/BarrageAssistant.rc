@@ -1,0 +1,289 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\BarrageAssistant.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\BarrageAssistant.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 171, 78
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 BarrageAssistant"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "BarrageAssistant，2.0.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2017",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,114,56,50,14,WS_GROUP
+    LTEXT           "斗鱼&神鯨大侠",IDC_ST_DOUYU,41,40,50,8
+    LTEXT           "知乎&精神病好多了",IDC_ST_ZHIHU,41,53,56,8,SS_NOTIFY
+END
+
+IDD_BARRAGEASSISTANT_DIALOG DIALOGEX 0, 0, 167, 317
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "BarrageAssistant(v2.0.0)"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "登录斗鱼(方式选择)",IDC_STATIC,8,244,151,65
+    EDITTEXT        IDC_EDIT_ROOMID,48,256,37,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "连接",IDC_BT_CONNECT_DOUYU,87,256,33,14
+    GROUPBOX        "弹幕字体",IDC_STATIC,8,5,151,69
+    LTEXT           "字体名称：\r\n\r\n字体大小：\r\n",IDC_STATIC,16,16,37,31
+    COMBOBOX        IDC_COMBO_FONTNAME,55,14,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_FONTSIZE,55,31,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "字体加粗",IDC_CHECK_FONTBOLD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,12,43,10
+    CONTROL         "字体倾斜",IDC_CHECK_FONTTILT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,23,43,10
+    CONTROL         "字体下划线",IDC_CHECK_FONTUNDERLINE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,34,44,10
+    PUSHBUTTON      "设置",IDC_BT_FONTSET,118,57,39,13
+    GROUPBOX        "字体颜色",IDC_STATIC,8,74,151,125
+    PUSHBUTTON      "文字颜色1",IDC_BT_COLOR1,54,86,48,12
+    PUSHBUTTON      "文字颜色2",IDC_BT_COLOR2,109,86,48,12
+    PUSHBUTTON      "文字边框",IDC_BT_BORDER,54,102,48,12
+    COMBOBOX        IDC_COMBO_TEXTGRADIENTMODE,54,118,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "文字高亮1",IDC_BT_HIGHLINE1,54,134,48,12
+    PUSHBUTTON      "文字高亮2",IDC_BT_HIGHLINE2,109,134,48,12
+    PUSHBUTTON      "高亮边框",IDC_BT_HIGHLINEBORDER,54,150,48,12
+    COMBOBOX        IDC_COMBO_TEXTHIGHLINEGRADIENTMODE,54,166,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "设置",IDC_BT_COLORSET,118,182,39,13
+    PUSHBUTTON      "断开",IDC_BT_DISCONNECT_DOUYU,123,256,33,14
+    COMBOBOX        IDC_COMBO_LOGIN,12,257,35,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "对齐方式",IDC_STATIC,8,200,151,43
+    COMBOBOX        IDC_COMBO_ALIGNMENT,14,219,35,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "设置",IDC_BT_ALIGNMENTSET,118,221,39,13
+    CONTROL         "时间戳",IDC_CHECK_TIMEFLAG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,54,223,37,10
+    CONTROL         "OSD锁定&&解锁",IDC_CHECK_OSDLOCK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,54,209,54,10
+    CONTROL         "鱼丸",IDC_CHECK_FISH_BALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,92,46,23,10
+    CONTROL         "禁言",IDC_CHECK_BANNED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,46,23,10
+    CONTROL         "酬勤",IDC_CHECK_GIFT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,65,57,23,10
+    CONTROL         "来宾",IDC_CHECK_GUEST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,37,57,23,10
+    CONTROL         "点赞",IDC_CHECK_GDN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,92,57,23,10
+    CONTROL         "弹幕",IDC_CHECK_BA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,65,46,23,10
+    CONTROL         "溜",IDC_CHECK_666,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,57,16,10
+    CONTROL         "心",IDC_CHECK_HEART,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,46,16,10
+    CONTROL         "连击",IDC_CHECK_FISH_DBHIT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,119,46,31,10
+    LTEXT           "弹幕类型：",IDC_STATIC,16,185,35,8
+    COMBOBOX        IDC_COMBO_BATYPE,54,183,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "关注:",IDC_STATIC,13,275,17,8
+    LTEXT           "Static",IDC_ST_ROOMID,36,275,116,8
+    LTEXT           "Static",IDC_ST_WEIGHT,48,286,86,8
+    LTEXT           "在线人数:",IDC_STATIC,13,297,31,8
+    LTEXT           "Static",IDC_ST_ONLINENUMS,48,297,86,8
+    LTEXT           "文字颜色：",IDC_STATIC,16,88,35,8
+    LTEXT           "文字边框：",IDC_STATIC,16,104,35,8
+    LTEXT           "文字渐变：",IDC_STATIC,16,120,35,8
+    LTEXT           "高亮颜色：",IDC_STATIC,16,136,35,8
+    LTEXT           "高亮边框：",IDC_STATIC,16,152,35,8
+    LTEXT           "高亮渐变：",IDC_STATIC,16,168,35,8
+    LTEXT           "主播体重:",IDC_STATIC,13,286,31,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "FileDescription", "BarrageAssistant"
+            VALUE "FileVersion", "2.0.0.0"
+            VALUE "InternalName", "BarrageAssistant.exe"
+            VALUE "LegalCopyright", "LuoCheng"
+            VALUE "OriginalFilename", "BarrageAssistant.exe"
+            VALUE "ProductName", "BarrageAssistant"
+            VALUE "ProductVersion", "2.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_BARRAGEASSISTANT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 313
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_BARRAGE_MENU MENU 
+BEGIN
+    POPUP "托盘菜单"
+    BEGIN
+        MENUITEM "关于",                          ID_ABOUTBARRAGE
+        MENUITEM "还原",                          ID_MENU_RESTORE
+        MENUITEM "退出",                          ID_MENU_EXIT
+    END
+END
+
+IDR_MENU_LOCK MENU 
+BEGIN
+    POPUP "锁"
+    BEGIN
+        MENUITEM "锁定",                          ID_LOCK_OSD
+        MENUITEM "解除",                          ID_UNLOCK_OSD
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS 
+BEGIN
+    VK_F9,          ID_LOCK_OSD,            VIRTKEY, CONTROL, NOINVERT
+    VK_F10,         ID_UNLOCK_OSD,          VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 BarrageAssistant(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\BarrageAssistant.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
